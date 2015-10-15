@@ -1,0 +1,126 @@
+\chapter{[Chapter Title]}\label{ch:common}
+
+This is the beginning of Chapter~\ref{ch:common}. Always have text between every head
+and subhead. The most commonly used references by our community are
+   TESTBalls~\cite{appleton2014additive},
+   books~\cite{IEEEexample:book_typical},
+   journal articles~\cite{IEEEexample:article_typical},
+   conference proceedings~\cite{IEEEexample:conf_typical},
+   online resources~\cite{IEEEhowto:IEEEtranpage},
+   theses~\cite{IEEEexample:masters},
+   private communication~\cite{IEEEexample:private}, and
+   class notes~\cite{NPSexample:notes}.
+Here are some citations\footnote{These citations were taken
+from the IEEEtran example bib file.} that demonstrate nearly every bib 
+style\footnote{\lipsum[10]} that exists~\cite{IEEEhowto:IEEEtranpage,
+IEEEexample:shellCTANpage,IEEEexample:bibtexuser,IEEEexample:bibtexdesign,
+IEEEexample:tamethebeast,IEEEexample:bibtexguide,
+IEEEexample:article_typical,IEEEexample:articleetal,IEEEexample:conf_typical,
+IEEEexample:book_typical,IEEEexample:articlelargepages,
+IEEEexample:articledualmonths,IEEEexample:TBParticle,
+IEEEexample:bookwitheditor,IEEEexample:book,IEEEexample:bookwithseriesvolume,
+IEEEexample:inbook,IEEEexample:inbookpagesnote,IEEEexample:incollection,
+IEEEexample:incollectionwithseries,IEEEexample:incollection_chpp,
+IEEEexample:incollectionmanyauthors,
+IEEEexample:motmanualhowpub,IEEEexample:confwithadddays,
+IEEEexample:confwithvolume,IEEEexample:confwithpaper,
+IEEEexample:confwithpapertype,IEEEexample:presentedatconf,
+IEEEexample:masters,IEEEexample:masterstype,IEEEexample:phdurl,
+IEEEexample:techrep,IEEEexample:techreptype,IEEEexample:techreptypeii,
+IEEEexample:techrepstdsub,IEEEexample:unpublished,IEEEexample:electronhowinfo,
+IEEEexample:electronhowinfo2,IEEEexample:electronorgadd,IEEEexample:uspat,
+IEEEexample:jppat,IEEEexample:frenchpatreq,
+IEEEexample:standard,IEEEexample:standardproposed,IEEEexample:draftasmisc,
+IEEEexample:miscforum,IEEEexample:whitepaper,IEEEexample:datasheet,
+IEEEexample:private,IEEEexample:miscrfc,IEEEexample:softmanual,
+IEEEexample:softonline,IEEEexample:miscgermanreg,IEEEexample:bluebookstandard
+}.
+
+This shows the acronym macro being used for the \ac{US}, which can
+be used again in its short form \ac{US}.
+
+\section{Problem Statement}\label{sec:Problem Statement}
+A simple equation to check numbering.
+\begin{equation}
+a^2 + b^2 = c^2
+\end{equation}
+
+stuff 
+ 
+\lipsum[1-4] % remove me
+
+\begin{figure}
+\framebox[\textwidth]{\parbox{\textwidth}{\lipsum[1]}} % example figure (text in a box)
+\caption[{[Alternate short name]}]{[Figure name]}
+\end{figure}
+
+\section{Another Section}
+A simple equation to check numbering.
+\begin{equation}
+L' = {L}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{equation}
+\lipsum[2-3] % remove me
+
+\subsection{A subsection}
+\lipsum[5-6] % remove me
+
+\section{Yet Another Section}
+\lipsum[1] % remove me
+\begin{table}
+\begin{center}
+\begin{tabular}{ | c | c | c | }
+\hline
+  1 & 2 & 3 \\ \hline\hline
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+\hline
+\end{tabular}\vspace{-1em}% remove some of the whitespace that pads the end
+\end{center}
+\caption{[Table name]}
+\end{table}
+\lipsum[2]
+
+\subsection{A subsection with a long name that continues onto two lines and should be single-spaced within the title}\label{sec:another}
+\lipsum[3]
+
+\subsubsection{A subsubsection}\label{sec:minorstuff}
+\lipsum[4]
+
+
+\section{Things to Remember When Writing}\label{sec:remember}
+\begin{enumerate}
+\item Punctuation (periods and commas) go inside quotation marks. 
+\item Use the \LaTeX{} \verb+\begin{figure}+ and \verb+\begin{table}+ environment to
+  create floating figures and tables. Use the \verb+\caption+ command
+  to create your captions. Label your captions with the
+  \verb+\label{foo}+ command inside the caption itself. Reference
+  these figures and tables with the \verb+\ref{foo}+ reference command.
+\item The macros \verb+\etal+, \verb+\ie+, \verb+\eg+ and \verb+\etc+ force proper
+  U.S. convention for use of these, \ie a comma follows.
+  It is redundant and incorrect to use \etc at the end of a list of
+  examples, \eg, apples, pears, \etc.
+\item Do not split text around a figure or table. 
+\item Master's degree has an apostrophe and Postgraduate is one word. 
+\item If you use ``however,'' make sure there's a comma before and after,
+unless you 
+start a sentence with it. However, it's best not to start a sentence
+with ``however.'' And while we're on the subject, you should try to avoid starting a sentence with ``and'' or ``because.'' 
+\item When typing a date, do not use ``st'' or ``th.'' Instead, just
+  note the date: July 4, 1776, is Independence Day. Commas go 
+after month/date, year: both Jefferson and Adams died on July 4, 1826.
+No comma between month/yr: \textit{Alice's Adventures in Wonderland} was published in July 1865.
+\item In general, spell out numbers one through nine, and use numerals for 10 and greater.
+\item Use automatic numbering and lettering.
+\item Capitalize C in Chapter, F in Figure and T in Table when referring
+to chapters, figures or tables in the text. Better yet, use the \verb+\chapref+,
+\verb+\figref+ and \verb+\tabref+ commands in the NPS report template.
+\item When there is more than one reference, put them both into the \verb+\cite+ command: \verb+\cite{john1,john2}+. It will render like this \cite{IEEEhowto:IEEEtranpage,IEEEexample:shellCTANpage}.
+\item Avoid writing in the first person!
+\item Make sure there are no widows at the
+  top of the page---if \LaTeX{} gives you a hard time, you may need to
+  add or remove text so that everything works out properly.
+\item Footnote numbers go outside the punctuation. 
+\item When typing equations in text, use ``where'' or ``if.'' Use
+  Math Mode. 
+\item When inserting symbols, use Math Mode.
+\end{enumerate}
